@@ -40,9 +40,10 @@ public class Main {
 
         String fullName2 = "Иванов Семён Семёнович";
 
-        String modificationFullName2 = fullName2.replace('ё', 'е');
+        // String modificationFullName2 = fullName2.replace('ё', 'е');
 
-        System.out.println("Данные Ф. И. О. сотрудника — " + modificationFullName2);
+        System.out.println("Данные Ф. И. О. сотрудника — " + fullName2.replace('ё', 'е'));
+        // System.out.println("Данные Ф. И. О. сотрудника — " + modificationFullName2);
 
 
     }

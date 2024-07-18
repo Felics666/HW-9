@@ -8,11 +8,6 @@ public class Main {
 
         Scanner read = new Scanner(System.in);
 
-        String firstName = "Ivan";
-        String middleName = "Ivanovich";
-        String lastName = "Ivanov";
-        String fullName = lastName + " " + firstName + " " + middleName;
-
         // System.out.print("Введите имя - ");
         // String firstName = read.next();
 
@@ -23,10 +18,14 @@ public class Main {
         // String lastName = read.next();
 
         // String fullName = "Ф. И. О. сотрудника — " + lastName + " " + firstName + " " + middleName;
+        read.close();
+
+        String firstName = "Ivan";
+        String middleName = "Ivanovich";
+        String lastName = "Ivanov";
+        String fullName = lastName + " " + firstName + " " + middleName;
 
         System.out.println("Ф. И. О. сотрудника — " + fullName);
-
-        read.close();
 
         //// Task 2
         System.out.println();
@@ -37,6 +36,14 @@ public class Main {
         //// Task 3
         System.out.println();
         System.out.println("Task 3");
+
+        String fullName2 = "Иванов Семён Семёнович";
+
+        // String modificationFullName2 = fullName2.replace('ё', 'е');
+
+        System.out.println("Данные Ф. И. О. сотрудника — " + fullName2.replace('ё', 'е'));
+        // System.out.println("Данные Ф. И. О. сотрудника — " + modificationFullName2);
+
 
     }
 }
